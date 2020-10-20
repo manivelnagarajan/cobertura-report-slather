@@ -1,6 +1,8 @@
-# Cobertura action
+# Cobertura action for reports exported from Slather.
 
-![](https://github.com/5monkeys/cobertura-action/workflows/Test/badge.svg)
+![](https://github.com/manivelnagarajan/cobertura-report-slather/workflows/Test/badge.svg)
+
+## This is modified from [corbertura-action](https://github.com/5monkeys/cobertura-action) to support new input ignore_branch_rate. Ignore branch rate is useful for cobertura xml reports generated using [Slather](https://github.com/SlatherOrg/slather) for XCode projects.
 
 GitHub Action which parse a [XML cobertura report](http://cobertura.github.io/cobertura/) and display the metrics in a GitHub Pull Request.
 
@@ -58,7 +60,7 @@ Use a unique name for the report and comment.
 
 ### `ignore_branch_rate`
 
-Default is false. You can set true if you don't want to count branch_rate while calcuating total coverage.
+Default is false. You can set true if you don't want to count branch_rate while calcuating total coverage. If you have exported the report using Slather for XCode projects, then it is recommended to set true here.
 
 ### `pull_request_number` **Optional**
 
@@ -76,7 +78,7 @@ jobs:
   coverage:
     runs-on: ubuntu-latest
     steps:
-      - uses: 5monkeys/cobertura-action@master
+      - uses: manivelnagarajan/cobertura-report-slather@master
         with:
           path: src/test.xml
           repo_token: ${{ secrets.GITHUB_TOKEN }}
