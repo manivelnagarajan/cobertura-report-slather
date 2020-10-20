@@ -48,12 +48,17 @@ async function action(payload) {
     core.getInput("only_changed_files", { required: true })
   );
   const reportName = core.getInput("report_name", { required: false });
-  const ignoreBranchRate = core.getInput("ignore_branch_rate", { required: false });
+  const ignoreBranchRate = core.getInput("ignore_branch_rate", { 
+    required: false
+  });
   const changedFiles = onlyChangedFiles
     ? await listChangedFiles(pullRequestNumber)
     : null;
 
-  const report = await processCoverage(path, { skipCovered: skipCovered, ignoreBranchRate: ignoreBranchRate });
+  const report = await processCoverage(path, {
+    skipCovered: skipCovered,
+    ignoreBranchRate: ignoreBranchRate
+  });
   const comment = markdownReport(report, commit, {
     minimumCoverage,
     showLine,

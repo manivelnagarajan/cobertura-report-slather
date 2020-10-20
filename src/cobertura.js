@@ -60,7 +60,8 @@ function processPackage(packageObj) {
 function calculateRates(element, ignoreBranchRate) {
   const line = parseFloat(element["line-rate"]) * 100;
   const branch = parseFloat(element["branch-rate"]) * 100;
-  const total = line && branch && !ignoreBranchRate ? (line + branch) / 2 : line;
+  const hasBothLineAndBranch = line && branch && !ignoreBranchRate
+  const total = hasBothLineAndBranch ? (line + branch) / 2 : line;
   return {
     total,
     line,
