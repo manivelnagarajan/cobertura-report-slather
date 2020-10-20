@@ -48,7 +48,7 @@ async function action(payload) {
     core.getInput("only_changed_files", { required: true })
   );
   const reportName = core.getInput("report_name", { required: false });
-  const ignoreBranchRate = core.getInput("ignore_branch_rate", { 
+  const ignoreBranchRate = core.getInput("ignore_branch_rate", {
     required: false
   });
   const changedFiles = onlyChangedFiles
