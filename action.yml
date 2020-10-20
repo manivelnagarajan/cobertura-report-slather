@@ -1,0 +1,47 @@
+name: 'cobertura-report-for-slather'
+description: Report cobertura coverage reports in Pull Requests
+inputs:
+  repo_token:
+    description: 'The GITHUB_TOKEN for this repo'
+    required: true
+  path:
+    description: 'Path to the cobertura file.'
+    required: true
+    default: 'coverage.xml'
+  skip_covered:
+    description: 'If files with 100% should be skipped from report.'
+    required: true
+    default: true
+  ignore_branch_rate:
+    description: 'It gives you the flexibility to ignore branch_rate while calcuating total coverage. By default it is false.'
+    required: true
+    default: false
+  minimum_coverage:
+    description: 'Minimum allowed coverage percentage as an integer.'
+    required: true
+  show_line:
+    description: 'Show line rate as specific column.'
+    required: true
+    default: false
+  show_branch:
+    description: 'Show branch rate as specific column.'
+    required: true
+    default: false
+  show_class_names:
+    description: 'Show class names instead of file names.'
+    required: true
+    default: false
+  only_changed_files:
+    description: 'Only show coverage for changed files.'
+    required: true
+    default: false
+  pull_request_number:
+    description: 'Pull request number associated with the report. This property should be used when workflow trigger is different than pull_request.'
+    required: false
+    default: ''
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'percent'
+  color: 'green'
