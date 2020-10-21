@@ -110,7 +110,7 @@ function markdownReport(report, commit, options) {
   _Minimum allowed coverage is `80%`_
   */
 
-  const total = Math.round(report.total);
+  const total = parseFloat(report.total).toFixed(2);
   const linesTotal = Math.round(report.line);
   const branchTotal = Math.round(report.branch);
   const table = [

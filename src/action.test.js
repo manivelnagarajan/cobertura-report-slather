@@ -136,7 +136,7 @@ test("markdownReport", () => {
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :white_check_mark: |
+| **All files** | \`77.50%\` | :white_check_mark: |
 | foo.py | \`80%\` | :white_check_mark: |
 | bar.py | \`75%\` | :white_check_mark: |
 
@@ -149,7 +149,7 @@ _Minimum allowed coverage is \`70%\`_
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 | foo.py | \`80%\` | :x: |
 | bar.py | \`75%\` | :x: |
 
@@ -163,7 +163,7 @@ _Minimum allowed coverage is \`100%\`_
 
 | File | Coverage | Lines |   |
 | - | :-: | :-: | :-: |
-| **All files** | \`78%\` | \`78%\` | :white_check_mark: |
+| **All files** | \`77.50%\` | \`78%\` | :white_check_mark: |
 | foo.py | \`80%\` | \`80%\` | :white_check_mark: |
 | bar.py | \`75%\` | \`80%\` | :white_check_mark: |
 
@@ -180,7 +180,7 @@ _Minimum allowed coverage is \`70%\`_
 
 | File | Coverage | Branches |   |
 | - | :-: | :-: | :-: |
-| **All files** | \`78%\` | \`0%\` | :white_check_mark: |
+| **All files** | \`77.50%\` | \`0%\` | :white_check_mark: |
 | foo.py | \`80%\` | \`0%\` | :white_check_mark: |
 | bar.py | \`75%\` | \`0%\` | :white_check_mark: |
 
@@ -198,7 +198,7 @@ _Minimum allowed coverage is \`70%\`_
 
 | File | Coverage | Lines | Branches |   |
 | - | :-: | :-: | :-: | :-: |
-| **All files** | \`78%\` | \`78%\` | \`0%\` | :white_check_mark: |
+| **All files** | \`77.50%\` | \`78%\` | \`0%\` | :white_check_mark: |
 | foo.py | \`80%\` | \`80%\` | \`0%\` | :white_check_mark: |
 | bar.py | \`75%\` | \`80%\` | \`0%\` | :white_check_mark: |
 
@@ -211,7 +211,7 @@ _Minimum allowed coverage is \`70%\`_
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 | foo.py | \`80%\` | :white_check_mark: |
 | bar.py | \`75%\` | :x: |
 
@@ -224,7 +224,7 @@ _Minimum allowed coverage is \`80%\`_
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 | ClassFoo | \`80%\` | :x: |
 | ClassBar | \`75%\` | :x: |
 
@@ -237,7 +237,7 @@ _Minimum allowed coverage is \`100%\`_
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 | bar.py | \`75%\` | :x: |
 
 _Minimum allowed coverage is \`100%\`_
@@ -249,7 +249,7 @@ _Minimum allowed coverage is \`100%\`_
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 
 _Minimum allowed coverage is \`100%\`_
 
@@ -260,7 +260,7 @@ _Minimum allowed coverage is \`100%\`_
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 
 _Minimum allowed coverage is \`100%\`_
 
@@ -286,7 +286,7 @@ test("addComment with update", async () => {
 
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 
 _Minimum allowed coverage is \`100%\`_
 
@@ -309,7 +309,7 @@ test("addComment for specific report", async () => {
   const report1Comment = `Report1
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 
 _Minimum allowed coverage is \`100%\`_
 
@@ -331,7 +331,7 @@ test("addComment with update for specific report", async () => {
   const report1Comment = `Report1
 | File | Coverage |   |
 | - | :-: | :-: |
-| **All files** | \`78%\` | :x: |
+| **All files** | \`77.50%\` | :x: |
 
 _Minimum allowed coverage is \`100%\`_
 
